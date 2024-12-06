@@ -3,8 +3,8 @@
 @use "sizes" as *;
 
 // Contextual
-$color-text-default: $color-primary-700;
-$color-background-default: $color-primary-100;
+$color-text-default: hsl(0, 0%, 15%);
+$color-background-default: $color-neutral-100;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
 
@@ -115,7 +115,7 @@ $form-input-font-family: $body-font-family;
 $form-input-font-weight: $font-weight-semi-bold;
 $form-input-font-size: $body-font-size;
 $form-input-background-color: $color-neutral-100;
-$form-input-border-default: 3px solid $color-primary-200;
+$form-input-border-default: 3px solid $color-primary-700;
 $form-input-border-focus: 3px solid $color-primary-400;
 $form-input-padding: $size-3;
 $form-input-border-radius: $border-radius-1;

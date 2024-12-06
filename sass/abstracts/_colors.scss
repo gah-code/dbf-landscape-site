@@ -1,5 +1,8 @@
 // global color tokens
 $-clr-white: hsl(0 0% 100%);
+$-clr-white-100: hsl(60, 23%, 94%);
+$-clr-white-200: hsl(60, 20%, 90%);
+
 $-clr-orange-400: hsl(8 62% 55%);
 $-clr-orange-500: hsl(8 62% 35%);
 $-clr-brown-100: hsl(33 24% 92%);
@@ -9,22 +12,38 @@ $-clr-brown-400: hsl(22 31% 44%);
 $-clr-brown-700: hsl(20 23% 23%);
 $-clr-brown-800: hsl(18 23% 10%);
 
+$-clr-green-100: hsl(135, 39%, 92%); // Light Forest Green
+$-clr-green-200: hsl(135, 39%, 78%); // Lighter Forest Green
+$-clr-green-300: hsl(135, 39%, 64%); // Medium Light Forest Green
+$-clr-green-400: hsl(135, 39%, 50%); // Medium Forest Green
+$-clr-green-500: hsl(135, 39%, 42%); // Darker Forest Green
+$-clr-green-600: hsl(135, 39%, 35%); // Dark Forest Green
+$-clr-green-700: hsl(135, 39%, 28%); // Forest Green
+$-clr-green-800: hsl(134, 39%, 24%); // Forest Green
+
+$-clr-charcoal-grey-100: hsl(0, 14%, 96%); // Very Light Charcoal Grey
+$-clr-charcoal-grey-200: hsl(0, 0%, 70%); // Light Charcoal Grey
+$-clr-charcoal-grey-300: hsl(0, 0%, 55%); // Medium Light Charcoal Grey
+$-clr-charcoal-grey-400: hsl(0, 0%, 40%); // Medium Charcoal Grey
+$-clr-charcoal-grey-500: hsl(0, 0%, 29%); // Charcoal Grey
+$-clr-charcoal-grey-600: hsl(0, 0%, 22%); // Dark Charcoal Grey
+$-clr-charcoal-grey-700: hsl(0, 0%, 15%); // Darker Charcoal Grey
+$-clr-charcoal-grey-800: hsl(0, 0%, 10%); // Very Dark Charcoal Grey
+
 $colors: (
-  "neutral": (
-    "100": $-clr-white,
+  "neutral": ("100": $-clr-white-100,
   ),
-  "accent": (
-    "400": $-clr-orange-400,
-    "500": $-clr-orange-500,
+  "accent": ("400": $-clr-charcoal-grey-700,
+    "500": $-clr-charcoal-grey-800,
   ),
-  "primary": (
-    "100": $-clr-brown-100,
-    "200": $-clr-brown-200,
-    "300": $-clr-brown-300,
-    "400": $-clr-brown-400,
-    "700": $-clr-brown-700,
-    "800": $-clr-brown-800,
+  "primary": ("100": $-clr-green-100,
+    "200": $-clr-green-200,
+    "300": $-clr-green-300,
+    "400": $-clr-green-400,
+    "700": $-clr-green-500,
+    "800": $-clr-green-600,
   ),
+
 );
 
 // contextual color tokens

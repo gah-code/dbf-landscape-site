@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Barber Shop</title>
   <link rel="stylesheet" href="/sass/main.scss">
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -24,16 +26,17 @@
       </div>
     </div>
   </header>
+
   <main>
     <section class="section" id="about">
       <div class="container">
         <div class="even-columns">
           <div class="flow">
-            <h1 class="heading-1">The Barber Shop</h1>
-            <p class="fs-600">Established over a decade ago, The Barber Shop is here to serve you're hair needs,
-              whatever they are.
-              From a simple cut,
-              a beard trim or a hot towel shave, we're here to help you with.</p>
+            <h1 class="heading-1">Transform Your Outdoors</h1>
+            <p class="fs-600">At DFB Landscape, we take pride in transforming ordinary outdoor spaces into stunning
+              landscapes. Whether you need tree
+              trimming, irrigation installation, or seasonal clean-ups, we have the expertise to bring your vision to
+              life.</p>
             <div class="flex-group">
               <a href="#contact" class="button" data-type="accent">Book appointment</a>
               <a href="#pricing" class="button" data-type="primary">View pricing</a>
@@ -47,14 +50,16 @@
       </div>
     </section>
 
-    <section class="section text-center bg-primary-200" id="services">
+    <!-- <section class="section text-center bg-primary-300" id="services"> -->
+    <section class="section text-center " id="services">
+
       <div class="container">
         <header class="margin-block-end-10">
           <h2 class="heading-2">Our services</h2>
         </header>
         <div class="grid-auto-fit | margin-block-end-10">
           <div class="card">
-            <h3 class="card__heading">Hair Cutting</h3>
+            <h3 class="card__heading">Tree Trimming</h3>
             <p>A quick clean up or a totally new style,
               we have you covered.</p>
           </div>
@@ -78,12 +83,22 @@
             <h3 class="card__heading">Products</h3>
             <p>We carry a wide range of hair and beard products.</p>
           </div>
+
+          <div class="card text-left">
+            <!-- <img class="card__icon" src="https://assets.codepen.io/308367/comment.svg" /> -->
+            <ion-icon class="card__icon meal-icon" name="restaurant-outline"></ion-icon>
+            <h3 class="card__heading">Products</h3>
+            <p>Keep all your files securely stored, up to date, and accessible from any device</p>
+          </div>
+
+
         </div>
 
         <a href="#contact" class="button" data-type="accent">Book appointment</a>
 
       </div>
     </section>
+
 
     <section class="section text-center" id="hours">
       <div class="container" data-type='full-bleed'>
@@ -93,33 +108,33 @@
           <p class="fs-600">Open 7 days a week to serve your hair cutting needs</p>
         </header>
 
-        <div class="hours">
+        <div class="hours ">
           <div>
-            <h3 class="heading-3">Mon</h3>
+            <h3 class="heading-3 clr-primary-500">Mon</h3>
             <p class="fs-500">9:00 - 18:00</p>
           </div>
           <div>
-            <h3 class="heading-3 clr-primary-400">Tue</h3>
+            <h3 class="heading-3 clr-primary-500">Tue</h3>
             <p class="fs-500">9:00 - 18:00</p>
           </div>
           <div>
-            <h3 class="heading-3 clr-primary-400">Wed</h3>
+            <h3 class="heading-3 clr-primary-500">Wed</h3>
             <p class="fs-500">9:00 - 18:00</p>
           </div>
           <div>
-            <h3 class="heading-3 clr-primary-400">Thu</h3>
+            <h3 class="heading-3 clr-primary-500">Thu</h3>
             <p class="fs-500">9:00 - 18:00</p>
           </div>
           <div>
-            <h3 class="heading-3 clr-primary-400">Fri</h3>
+            <h3 class="heading-3 clr-primary-500">Fri</h3>
             <p class="fs-500">9:00 - 21:00</p>
           </div>
           <div>
-            <h3 class="heading-3 clr-primary-400">Sat</h3>
+            <h3 class="heading-3 clr-primary-500">Sat</h3>
             <p class="fs-500">9:00 - 21:00</p>
           </div>
           <div>
-            <h3 class="heading-3 clr-primary-400">Sun </h3>
+            <h3 class="heading-3 clr-primary-500">Sun </h3>
             <p class="fs-500">9:00 - 18:00</p>
           </div>
         </div>
