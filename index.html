@@ -9,10 +9,14 @@
   <link rel="stylesheet" href="/sass/main.scss">
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=yard" />
 </head>
 
 <body>
-  <header class="site-header">
+  <!-- <header class="site-header">
     <div class="container">
       <div class="site-header__inner">
         <img src="/logo.svg" alt="" class="logo">
@@ -25,10 +29,191 @@
         </nav>
       </div>
     </div>
+  </header> -->
+
+  <header class="site-header">
+    <div class="container">
+      <img src="/logo.svg" alt="Site logo" class="logo" />
+      <nav class="primary-navigation">
+        <ul class="nav">
+          <li><a href="#about">About us</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#prices">Prices</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero-banner">
+    <div class="container">
+      <div class="even-columns">
+        <!-- Content Column -->
+        <div class="content">
+          <h1 class="heading-1">Transform Your Outdoors</h1>
+          <p>
+            At DFB Landscape, we take pride in transforming ordinary outdoor
+            spaces into stunning landscapes. Whether you need tree trimming,
+            irrigation installation, or seasonal clean-ups, we have the expertise
+            to bring your vision to life.
+          </p>
+          <div class="flex-group">
+            <a href="#contact" class="button" data-type="accent">Book appointment</a>
+            <a href="#pricing" class="button" data-type="primary">View pricing</a>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <form action="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail address</label>
+            <input id="email" type="email" placeholder="johnny1999@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input id="date" type="date" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input id="phone" type="tel" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Select service</label>
+            <input id="service" type="text" placeholder="e.g., Tree Trimming" required />
+          </div>
+          <div class="form-group">
+            <label for="barber">Barber's name <span class="fw-regular">(optional)</span></label>
+            <input id="barber" type="text" />
+          </div>
+          <button class="button" data-type="accent">Book appointment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <img src="/logo.svg" alt="DFB Landscape logo" class="logo" />
+        <nav class="primary-navigation">
+          <ul class="nav flex-group">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#prices">Prices</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="landing-section section">
+    <div class="container ">
+      <div class="even-columns">
+        <!-- Left Content -->
+        <div class="content flow">
+          <h1 class="heading-1">Transform Your Outdoors</h1>
+          <p class="fs-600">
+            At DFB Landscape, we take pride in transforming ordinary outdoor spaces into stunning landscapes. Whether
+            you
+            need tree trimming, irrigation installation, or seasonal clean-ups, we have the expertise to bring your
+            vision
+            to life.
+          </p>
+
+        </div>
+        <!-- Right Content -->
+
+        <div class="container" data-type="narrow">
+
+          <form action="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail address</label>
+              <input id="email" type="email" placeholder="johnny1999@gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input id="date" type="date" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Select service</label>
+              <input id="service" type="text" placeholder="e.g., Tree Trimming" required />
+            </div>
+            <div class="form-group">
+              <label for="barber">Barber's name <span class="fw-regular">(optional)</span></label>
+              <input id="barber" type="text" />
+            </div>
+            <button class="button" data-type="accent">Book appointment</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="hero container">
+    <div class="hero__inner row">
+      <div class="title">
+        <h1>Responsive layouts <span>don't have to be a struggle</span></h1>
+      </div>
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a class="btn" href="">i want to learn</a>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- <header class="navbar container">
+    <div class="navbar__inner row">
+      <a id="menu" class="icon-menu">
+      </a>
+      <a href="#" class="nav__logo">
+        <img src="./img/logo.svg" id="btn" alt="pege's logo" />
+      </a>
+      <nav id="navId" class="nav">
+
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">home</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">about</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">contact</a>
+          </li>
+        </ul>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">sign in</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="btn nav__link">sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+
   <main>
-    <section class="section" id="about">
+    <!-- <section class="section" id="about">
       <div class="container">
         <div class="even-columns">
           <div class="flow">
@@ -48,6 +233,52 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+
+    <section class="main container">
+      <div class="main__inner row">
+        <div class="main__text">
+          <h2>It doesn't have to be so hard</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="main__img">
+            <img src="./public/hair-cut.jpg" alt="content image">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="main__cards">
+          <div class="card">
+            <h3>Break it down</h3>
+            <p>Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua</p>
+          </div>
+          <div class="card">
+            <h3>Work your way up</h3>
+            <p>Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua</p>
+          </div>
+          <div class="card">
+            <h3>Take your skill to the nex level</h3>
+            <p>Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua</p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- <section class="section text-center bg-primary-300" id="services"> -->
@@ -86,9 +317,14 @@
 
           <div class="card text-left">
             <!-- <img class="card__icon" src="https://assets.codepen.io/308367/comment.svg" /> -->
-            <ion-icon class="card__icon meal-icon" name="restaurant-outline"></ion-icon>
-            <h3 class="card__heading">Products</h3>
-            <p>Keep all your files securely stored, up to date, and accessible from any device</p>
+            <!-- <ion-icon class="card__icon meal-icon" name="restaurant-outline"></ion-icon> -->
+            <svg class="card__icon " xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960"
+              width="34px" fill="#F4F4F4">
+              <path
+                d="M480-200q0-100-70-170t-170-70q0 100 70 170t170 70Zm0-202q26 0 44-18t18-44v-6q8 6 16.5 9t19.5 3q26 0 44-18t18-44q0-20-9.5-35T604-576q17-6 26.5-21t9.5-35q0-26-18-44t-44-18q-11 0-19.5 3t-16.5 9v-6q0-26-18-44t-44-18q-26 0-44 18t-18 44v6q-8-6-16.5-9t-19.5-3q-26 0-44 18t-18 44q0 20 9.5 35t26.5 21q-17 6-26.5 21t-9.5 35q0 26 18 44t44 18q11 0 19.5-3t16.5-9v6q0 26 18 44t44 18Zm0-112q-26 0-44-17.5T418-576q0-26 18-44t44-18q26 0 44 18t18 44q0 27-18 44.5T480-514Zm0 314q100 0 170-70t70-170q-100 0-170 70t-70 170ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0 0v-640 640Z" />
+            </svg>
+            <h3 class="card__heading">Tree Trimming</h3>
+            <p>Keeping your trees healthy and your landscape tidy with expert trimming services.</p>
           </div>
 
 

@@ -1,5 +1,3 @@
-
-
 @use "../abstracts" as *;
 
 .nav {
@@ -7,13 +5,271 @@
   list-style: none;
   font-family: $navigation-font-family;
   font-weight: $navigation-font-weight;
+  border: solid 3px #05282e;
 
   a {
     color: $navigation-color;
     text-decoration: $navigation-link-text-decoration;
+
 
     &:is(:hover, :focus) {
       color: $navigation-color-hover;
     }
   }
 }
+
+.hero,
+.foot {
+  background: #89dbe9;
+}
+
+.hero {
+  color: rgb(37, 37, 188);
+  padding-top: 5rem;
+  border: solid 3px #05282e;
+  display: flex;
+}
+
+.hero h1 {
+  color: rgb(79, 14, 14);
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.hero h1 span {
+  color: #05282e;
+}
+
+.hero .text p {
+  margin: 2rem 0;
+}
+
+.hero__inner {
+  padding-bottom: 2rem;
+}
+
+
+/* MAIN */
+
+.main__img img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+}
+
+.main__text h2 {
+  // font-size: 2rem;
+}
+
+.card {
+  background: #373c3d;
+  padding: 1rem;
+  text-align: center;
+  color: antiquewhite;
+  margin-bottom: 1rem;
+}
+
+
+@media (min-width: 700px) {
+  .main__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem auto;
+    font-family: $navigation-font-family;
+    font-weight: $navigation-font-weight;
+  }
+
+  .main__text {
+    width: 60%;
+  }
+
+  .main__text h2 {
+    margin: 0;
+    text-align: start;
+    font-size: 2.5rem;
+  }
+
+  .main__text p {
+    margin: 2rem 0;
+  }
+
+  .main__cards {
+    width: 30%;
+  }
+
+  .hero__inner {
+    display: flex;
+    align-items: center;
+    height: 550px;
+  }
+
+  .title {
+    width: 50%;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .text a {
+    font-size: 1.33rem;
+    padding: 1rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+    margin: 0;
+    text-align: start;
+    line-height: 5rem;
+  }
+
+  .hero p {
+    font-size: 1.33rem;
+  }
+}
+
+// .navbar {
+//   // background: var(--dark);
+//   background: #789296;
+//   position: fixed;
+
+// }
+
+// .navbar__inner {
+//   position: relative;
+//   display: flex;
+// }
+
+// .icon-menu {
+//   font-size: 2rem;
+//   color: rgb(254, 47, 47);
+//   width: 42%;
+// }
+
+// .nav__logo {
+//   width: 58%;
+// }
+
+// .nav {
+//   display: none;
+//   flex-direction: column;
+//   align-items: center;
+//   position: absolute;
+//   width: 100%;
+//   // background: var(--dark);
+//   background: #05282e;
+//   left: 0;
+//   top: 65px;
+
+//   /* height: 0; */
+
+
+// }
+
+// @keyframes down {
+//   from {
+//     height: 0;
+//   }
+
+//   to {
+//     height: 173px;
+//   }
+// }
+
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .nav--visible {
+//   animation-name: down;
+//   animation-duration: .5s;
+//   animation-fill-mode: forwards;
+//   display: flex !important;
+//   animation-name: fadeIn;
+//   animation-duration: .5s;
+//   animation-fill-mode: forwards;
+// }
+
+// .nav__list {
+
+//   width: 100%;
+// }
+
+// .nav__item {
+//   margin: .5rem 0;
+//   text-align: center;
+// }
+
+// .nav__link {
+//   // color: var(--white);
+//   color: #982aab;
+//   text-transform: uppercase;
+// }
+
+// .nav__link:hover,
+// .nav__link:focus {
+//   opacity: .7;
+// }
+
+
+// @media (min-width: 700px) {
+//   // .row {
+//   //   width: 90% !important;
+//   //   max-width: 1200px;
+//   //   margin: 0 auto;
+//   // }
+
+//   // p {
+//   //   font-size: 1.2rem;
+//   // }
+
+//   .icon-menu {
+//     display: none;
+//   }
+
+//   .nav {
+//     display: flex;
+//     justify-content: flex-end;
+//     flex-direction: row;
+//     position: relative;
+//     top: 0;
+//   }
+
+//   .nav__logo {
+//     width: auto;
+//   }
+
+//   .nav__list {
+//     display: flex;
+//     width: auto;
+//     margin-left: 2rem;
+
+//   }
+
+//   .nav__item {
+//     margin-left: 1rem;
+//   }
+
+// }
+
+
+// .btn {
+//   padding: .5rem 1rem;
+//   // background: var(--cream);
+//   background: #05282e;
+//   border-radius: 2rem;
+//   color: rgb(159, 35, 35);
+//   text-transform: uppercase;
+//   font-weight: 700;
+//   font-size: .8rem;
+// }

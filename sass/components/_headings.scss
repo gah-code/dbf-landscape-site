@@ -1,8 +1,15 @@
 @use '../abstracts/' as *;
 
 .heading-1 {
-  @include heading($font-size-900,
+  @include heading($font-size-800,
     $color-accent-400 );
+  text-align: center;
+
+  @include mq(medium) {
+    font-size: $font-size-900;
+    text-align: left
+  }
+
 }
 
 .heading-2 {

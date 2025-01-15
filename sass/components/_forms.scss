@@ -41,3 +41,93 @@ input:not(.button) {
     font-family: $form-placeholder-font-family;
   }
 }
+
+
+
+// Mixin for grid forms to ensure reusability
+@mixin grid-form($gap-y, $gap-x, $columns) {
+  display: grid;
+  gap: $gap-y $gap-x;
+
+  @include mq(medium) {
+    grid-template-columns: repeat($columns, 1fr);
+  }
+}
+
+// Mixin for form buttons to ensure consistent styling
+@mixin form-button($margin-block, $alignment) {
+  grid-column-end: -1;
+  justify-self: $alignment;
+  margin-block-start: $margin-block;
+}
+
+// Placeholder for form groups (reusable styling)
+%form-group {
+  display: grid;
+  gap: 0.5rem; // Default spacing between label and input
+}
+
+// Placeholder for input styling
+%form-input {
+  font-size: $form-input-font-size;
+  font-weight: $form-input-font-weight;
+  color: $form-input-color;
+  background-color: $form-input-background-color;
+  padding: $form-input-padding;
+  border: $form-input-border-default;
+  border-radius: $form-input-border-radius;
+
+  &::placeholder {
+    color: $form-placeholder-color;
+    font-weight: $form-placeholder-font-weight;
+    font-family: $form-placeholder-font-family;
+  }
+}
+
+// Reusable Component: Contact Form
+.contact-form {
+  @include grid-form($size-2, $size-6, 2); // Uses the reusable grid-form mixin
+
+  .form-group {
+    @extend %form-group; // Extend the reusable form-group placeholder
+  }
+
+  .button {
+    @include form-button($size-4, end); // Uses the reusable form-button mixin
+  }
+
+  input:not(.button) {
+    @extend %form-input; // Extend the reusable input placeholder
+  }
+
+  label {
+    color: $form-label-color;
+    font-family: $form-label-font-family;
+    font-weight: $form-label-font-weight;
+    font-size: $form-label-font-size;
+  }
+}
+
+// Reusable Component: Another Form Example (adaptable)
+.feedback-form {
+  @include grid-form(1rem, 1.5rem, 1); // Single-column layout by default
+
+  .form-group {
+    @extend %form-group;
+  }
+
+  .button {
+    @include form-button(1.5rem, center); // Center align button for single column
+  }
+
+  input:not(.button) {
+    @extend %form-input;
+  }
+
+  label {
+    color: $form-label-color;
+    font-family: $form-label-font-family;
+    font-weight: $form-label-font-weight;
+    font-size: $form-label-font-size;
+  }
+}

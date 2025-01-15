@@ -1,21 +1,138 @@
 @use "../abstracts" as *;
 
+// Mixin for flexible container
+@mixin container($max-width: 1200px, $padding: 1rem) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $padding;
+}
+
+// Mixin for hero banner background
+@mixin hero-banner($gradient-direction, $bg-color1, $bg-color2, $image-url) {
+  background-image: linear-gradient($gradient-direction,
+      $bg-color1,
+      $bg-color2 ),
+    url($image-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Header Styling
 .site-header {
-  color: $site-header-color;
-  background-color: $site-header-background-color;
-  padding: $site-header-padding;
+  background-color: rgba(0, 0, 0, 0.8); // Semi-transparent black
+  color: #fff;
+  padding: 0.5rem 2rem;
 
-  &__inner {
+  .container {
+    @include container(); // Use the reusable container mixin
     display: flex;
-    gap: $size-4;
-    align-items: $site-header-alignment;
-    justify-content: $site-header-jusitifcation-small-screens;
-
-    @include mq(medium) {
-      justify-content: $site-header-jusitifcation-large-screens;
-      flex-direction: row;
-    }
-
+    justify-content: space-between;
+    align-items: center;
   }
 
+  .logo {
+    height: 40px;
+  }
+
+  .primary-navigation {
+    .nav {
+      display: flex;
+      gap: $size-3;
+
+      li {
+        list-style: none;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            // color: $accent-color; // Use theme color
+          }
+        }
+      }
+    }
+  }
+}
+
+// Hero Banner Styling
+.hero-banner {
+  @include hero-banner(to bottom,
+    rgba(99, 181, 95, 0.605),
+    rgba(116, 182, 110, 0.798),
+    'https://raw.githubusercontent.com/jonasschmedtmann/html-css-course/master/final/06-Components/hero.jpg'
+  );
+  padding: 4rem 1rem;
+
+  @include mq(medium) {
+    @include hero-banner(to right,
+      rgba(99, 181, 95, 0.444),
+      rgba(116, 182, 110, 0.618),
+      'https://raw.githubusercontent.com/jonasschmedtmann/html-css-course/master/final/06-Components/hero.jpg'
+    );
+  }
+
+  .container {
+    @include container();
+  }
+
+  .even-columns {
+    display: grid;
+    gap: $size-4;
+
+    @include mq(medium) {
+      grid-template-columns: 1fr 1fr; // Two-column layout on larger screens
+    }
+  }
+
+  .content {
+    text-align: center;
+
+    h1 {
+      font-size: clamp(3rem, 5vw, 3.5rem);
+      color: #fff;
+
+      @include mq(medium) {
+        text-align: left;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: #ddd;
+      margin-top: $size-2;
+
+      @include mq(medium) {
+        text-align: left;
+      }
+    }
+
+    .flex-group {
+      display: flex;
+      justify-content: center;
+      gap: $size-4;
+
+      @include mq(medium) {
+        justify-content: start;
+      }
+
+      .button {
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-size: 1rem;
+
+        &[data-type="accent"] {
+          background-color: #000;
+          color: #fff;
+        }
+
+        &[data-type="primary"] {
+          background-color: #28a745;
+          color: #fff;
+        }
+      }
+    }
+  }
 }

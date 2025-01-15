@@ -1,20 +1,18 @@
 $-ff-sans: "Source Sans Pro", sans-serif;
-$-ff-serif: "Alegreya SC", serif;
+$-ff-serif: "Rubik", serif;
 
 $font-family-base: $-ff-sans;
 $font-family-accent: $-ff-serif;
 
 $font-sizes: (
-  "small": (
-    "900": 3.75rem,
+  "small": ("900": 3.75rem,
     "800": 2.25rem,
     "700": 1.75rem,
     "600": 1.125rem,
     "500": 1.125rem,
     "400": 1rem,
   ),
-  "large": (
-    "900": 3.75rem,
+  "large": ("900": 3.75rem,
     "800": 3rem,
     "700": 1.75rem,
     "600": 1.3125rem,

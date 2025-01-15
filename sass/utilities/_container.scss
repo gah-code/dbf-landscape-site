@@ -3,6 +3,7 @@
 .container {
   --padding: #{$container-min-margin-inline} * 2;
   --max-width: #{$container-max-width};
+  border: solid 3px #90191f;
 
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
@@ -10,10 +11,15 @@
 
 .container[data-type="narrow"] {
   --max-width: #{$container-max-width-narrow};
+  border: solid 5px #d7e820;
 }
+
 .container[data-type="wide"] {
+  border: dotted 3px #f78e04;
   --max-width: #{$container-max-width-wide};
 }
+
 .container[data-type="full-bleed"] {
+  border: dotted 3px #ff00fb;
   --max-width: 100%;
 }

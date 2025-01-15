@@ -1,3 +1,6 @@
-.flow > *:where(:not(:first-child)) {
+.flow>*:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1rem);
+  border: solid 3px #198090;
+
+
 }
